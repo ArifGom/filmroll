@@ -1,0 +1,59 @@
+{
+  "name": "filmroll",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@welldone-software/why-did-you-render": "^3.3.9",
+    "global": "^4.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-responsive-modal": "^4.0.1",
+    "react-scripts": "3.0.1",
+    "source-map-explorer": "^2.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "cp build/index.html build/200.html && surge build watchr2.surge.sh",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "8.0.5",
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "prettier": "^1.17.1",
+    "react-helmet": "^5.2.1",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "styled-components": "^4.2.0"
+  }
+}
